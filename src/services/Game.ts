@@ -1,3 +1,9 @@
+const slugs = [
+    'playstation5', 'xbox-series-x', 'pc', 'playstation4', 'playstation3', 'xbox360',
+    'xbox-one', 'macos', 'nintendo-switch', 'linux', 'android', 'ps-vita', 'ios', 'xbox-old',
+    'web'
+  ] as const;
+
 export interface Game {
     id: number;
     slug: string;
@@ -56,7 +62,7 @@ interface Platform {
 interface PlatformDetail {
     id: number;
     name: string;
-    slug: string;
+    slug: typeof slugs[number];
     image: null;
     year_end: null;
     year_start: null;
