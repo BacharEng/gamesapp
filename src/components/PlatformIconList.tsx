@@ -8,12 +8,10 @@ import {
     FaLinux,
     FaAndroid,
 } from "react-icons/fa";
-import { IconBaseProps, IconType as IconT } from "react-icons";
+import { IconType as IconT } from "react-icons";
 import {
     SiNintendo,
-    SiAtari,
 } from "react-icons/si";
-import { MdPhoneIphone } from "react-icons/md";
 import { BsGlobe } from "react-icons/bs";
 
 interface PlatformIconListProps {

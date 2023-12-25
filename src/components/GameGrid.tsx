@@ -28,10 +28,3 @@ const GameGrid = () => {
 }
 
 export default GameGrid;
-
-
-export const getSlugAndPrintAllTheListSlugs = (platform: Game['platforms'][0]['platform'][][]) => {
-    const slugs = platform.map(g => g.map(p => p.slug))
-    return Array.from(new Set(slugs.flat().flat()))
-}
-
