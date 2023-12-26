@@ -6,8 +6,8 @@ export interface FetchGamesResponse { count: number, results: Game[] }
 
 
 
-const useGames = (selectedGenre: Genre | null) => {
-    const { data,  error } = useData<Game>('/games?page_size=20');
+const useGames = (selectedGenre?: Genre | null) => {
+    const { data,  error } = useData<Game>('/games?page_size=20', {params: selectedGenre});
     
     return {
         data, 

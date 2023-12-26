@@ -15,7 +15,9 @@ const GameCard = ({game}: PropsGameCard) => {
         <Card borderRadius={12} overflow={'hidden'} >
             <Image src={imageCrop(game.background_image)} alt={game.name}  />
             <CardBody>
-                <Heading fontSize={'2xl'}>{game.name}</Heading>
+                <HStack height={'90px'} alignItems={'start'}>
+                    <Heading fontSize={'2xl'}>{game.name}</Heading>
+                </HStack>
                 <HStack justifyContent={'space-between'} >
                     <PlatformIconList platforms={game.platforms.map(p => p.platform)} />
                     <CriticScore score={game.metacritic}  />

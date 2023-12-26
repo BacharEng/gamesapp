@@ -22,7 +22,6 @@ const Genres = ({ onSelectGenre }: PropsGenres) => {
                         <HStack>
                             <Image boxSize={'32px'} borderRadius={8} src={getCropImageUrl(genre.image_background)}/>
                             <Button onClick={onSelectGenre}>{genre.name}</Button><Text fontSize={'larger'}></Text>
-
                         </HStack>
                     </ListItem>
                 })
